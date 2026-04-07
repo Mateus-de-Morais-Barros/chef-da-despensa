@@ -1,0 +1,33 @@
+.nav {
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1.5px solid var(--color-border);
+  background: var(--color-bg);
+  flex-shrink: 0;
+  box-shadow: var(--shadow-nav);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 52px;
+  border-radius: 16px;
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  transition: background 0.15s, color 0.15s;
+}
+
+.tab:hover {
+  background: rgba(212, 146, 10, 0.08);
+  color: var(--color-primary);
+}
+
+.tab.active {
+  background: rgba(212, 146, 10, 0.12);
+  color: var(--color-primary);
+}
