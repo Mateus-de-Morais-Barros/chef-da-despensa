@@ -33,8 +33,8 @@ export default function LoginPage() {
       await signInWithPopup(auth, googleProvider)
       navigate('/')
     } catch (e) {
+      console.error('Google login error:', e.code, e.message)
       setError('Erro ao entrar com Google. Tente novamente.')
-    } finally {
       setLoading(false)
     }
   }
